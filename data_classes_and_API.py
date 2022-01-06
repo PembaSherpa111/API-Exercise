@@ -25,7 +25,7 @@ class People():
     gender : str
     eye_color : str
     hair_color : str
-    filmID : str
+    filmID : list
     speciesID : str
 
 @dataclass
@@ -33,14 +33,14 @@ class Location():
     name : str
     climate : str
     terrain : str
-    filmID : str
+    filmID : list
 
 @dataclass
 class Vehicle():
     name : str
     vehicle_class : str
     length : str
-    filmID : str
+    filmID : list
 
 # Function to grab list of film ID from film API url. Note : the film url must be list and not string data type
 def get_filmID(film_url):
@@ -118,8 +118,13 @@ for i in range(0,len(vehicle_list)):
     vehicles.append(vehicle)
 
 #some sample query
-print(films[5])
-print(species[3])
-print(people[2])
-print(locations[1])
+print(films[0])
+print("=========================")
+print(species[0])
+print("=========================")
+print(people[0])
+print("=========================")
+print(locations[0])
+print("=========================")
 print(vehicles[0])
+print("=========================")
